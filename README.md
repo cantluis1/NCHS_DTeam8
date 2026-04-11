@@ -83,4 +83,7 @@ http://localhost:8080/
 
 ## Equipo
 
-Este proyecto fue desarrollado como ejercicio académico de análisis de datos usando información públicamente disponible del NCHS/CDC.
+Este proyecto fue desarrollado por:
+
+- **Valerie Martinez** — [GitHub](https://github.com/valeriemtz)
+- **Luis Cantillo** — [GitHub](https://github.com/cantluis1)
