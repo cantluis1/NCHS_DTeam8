@@ -22,6 +22,11 @@ from tabs import (
     despair,
     geografico,
     west_virginia,
+    metricas_modelos,
+    modelos_adicionales,
+    modelo_ets,
+    regresion_lineal,
+    comparacion_modelos,
     limitaciones,
     conclusiones,
 )
@@ -45,14 +50,20 @@ TABS_CONFIG = [
     ("tab-despair",         "Deaths of Despair",         despair),
     ("tab-geo",             "Análisis Geográfico",       geografico),
     ("tab-wv",              "Caso: West Virginia",       west_virginia),
+    ("tab-metricas",        "Métricas de Modelos",       metricas_modelos),
+    ("tab-mod-adicionales", "Modelos Adicionales",       modelos_adicionales),
+    ("tab-ets",             "Modelo ETS",                modelo_ets),
+    ("tab-regresion",       "Regresión Lineal",          regresion_lineal),
+    ("tab-comparacion",     "Comparación",               comparacion_modelos),
     ("tab-limit",           "Limitaciones",              limitaciones),
     ("tab-conclu",          "Conclusiones",              conclusiones),
 ]
 
 # Separadores visuales de sección en la barra de tabs
 SEPARADORES = {
-    "tab-evolucion": "ANÁLISIS EXPLORATORIO",
-    "tab-limit":     "CIERRE",
+    "tab-evolucion":       "ANÁLISIS EXPLORATORIO",
+    "tab-mod-adicionales": "MODELOS ADICIONALES",
+    "tab-limit":           "CIERRE",
 }
 
 
@@ -128,7 +139,7 @@ app.layout = html.Div([
                  style={"minHeight": "100vh", "backgroundColor": "#fafafa"}),
     ], style={"marginLeft": "220px", "flex": 1}),
 
-], style={"display": "flex", "fontFamily": "'DM Sans', sans-serif"})
+], style={"display": "flex", "fontFamily": "'Segoe UI', 'Helvetica Neue', Arial, sans-serif"})
 
 
 # ── Callback: navegación ──────────────────────────────────────────────────

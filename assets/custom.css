@@ -1,13 +1,30 @@
 /* assets/custom.css — NCHS Dashboard */
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap');
 
-* { box-sizing: border-box; }
+/* ── Fuente global: Segoe UI (igual que Shiny) ── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif !important;
+}
 
 body {
-  font-family: 'DM Sans', sans-serif !important;
+  font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif !important;
   background: #fafafa;
   color: #3a3a5c;
 }
+
+h1, h2, h3, h4, h5, h6,
+p, span, div, a, li, td, th,
+button, input, select, textarea, label,
+.container, .container-fluid, .row, .col,
+.card, .card-body, .card-header, .card-footer,
+.nav, .navbar, .dropdown-menu,
+pre, code, small, strong, em {
+  font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif !important;
+}
+
+/* Plotly graph text is controlled via Python, not CSS */
 
 ::-webkit-scrollbar { width: 5px; height: 5px; }
 ::-webkit-scrollbar-track { background: #f5f3ff; }
@@ -81,6 +98,5 @@ body {
 
 .dash-table-container .dash-spreadsheet-inner td,
 .dash-table-container .dash-spreadsheet-inner th {
-  font-family: 'DM Sans', sans-serif !important;
   font-size: 0.82rem !important;
 }

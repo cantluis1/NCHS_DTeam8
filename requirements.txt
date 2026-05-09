@@ -12,5 +12,9 @@ plotly==5.22.0
 pandas==2.2.2
 numpy==1.26.4
 
+# ── Series de tiempo (ARIMA) ───────────────────────────────────────
+statsmodels==0.14.0
+scikit-learn==1.4.2
+
 # ── Servidor de producción (opcional) ─────────────────────────────────
 gunicorn==22.0.0

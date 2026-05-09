@@ -95,9 +95,9 @@ def layout():
         item2 = html.Div([
             dbc.Row([
                 dbc.Col(html.Span(causa, className="fw-semibold small",
-                                  style={"color": "#3a3a5c", "fontFamily": "'DM Sans', sans-serif"}), width=7),
+                                  style={"color": "#3a3a5c", "fontFamily": "'Segoe UI', 'Helvetica Neue', Arial, sans-serif"}), width=7),
                 dbc.Col(html.Span(f"{total:,} muertes", className="text-end text-muted",
-                                  style={"fontSize": "0.72rem", "display": "block", "fontFamily": "'DM Sans', sans-serif"}), width=5),
+                                  style={"fontSize": "0.72rem", "display": "block", "fontFamily": "'Segoe UI', 'Helvetica Neue', Arial, sans-serif"}), width=5),
             ], className="mb-1 align-items-center"),
             html.Div(
                 html.Div(style={"width": f"{pct:.1f}%", "height": "8px",
@@ -185,14 +185,14 @@ def _nav_btn(tab_id, titulo, desc, color):
         children=html.Div([
             html.Div(
                 html.P(titulo, className="fw-semibold text-center mb-0",
-                       style={"color": "white", "fontFamily": "'DM Sans', sans-serif",
+                       style={"color": "white", "fontFamily": "'Segoe UI', 'Helvetica Neue', Arial, sans-serif",
                               "fontSize": "0.88rem"}),
                 className="px-2 py-2",
                 style={"background": "#001f3f", "borderRadius": "8px 8px 0 0"}
             ),
             html.Div(
                 html.P(desc, className="text-center mb-0",
-                       style={"fontSize": "0.72rem", "fontFamily": "'DM Sans', sans-serif",
+                       style={"fontSize": "0.72rem", "fontFamily": "'Segoe UI', 'Helvetica Neue', Arial, sans-serif",
                               "color": "#2c3e50", "lineHeight": "1.4"}),
                 className="p-2",
                 style={"background": "white", "borderRadius": "0 0 8px 8px",
